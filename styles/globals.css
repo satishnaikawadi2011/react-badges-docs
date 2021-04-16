@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap');
 /* CSS variables */
 :root {
-	--primaryColor: #f78c9f;
+	--primaryColor: #00cc99;
 	--mainGrey: #e8e8e8;
 	--darkGrey: #a9a9a9;
 	--mainWhite: #fff;
@@ -23,7 +23,7 @@
 }
 
 [data-theme="dark"] {
-	--primaryColor: #f78c9f;
+	--primaryColor: #00cc99;
 	--mainGrey: #e8e8e8;
 	--darkGrey: #a9a9a9;
 	--mainWhite: #fff;
