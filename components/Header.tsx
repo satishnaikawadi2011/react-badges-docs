@@ -9,6 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import NpmIcon from '../icons/NpmIcon';
 import DarkModeIcon from '../icons/DarkModeIcon';
 import LightModeIcon from '../icons/LightModeIcon';
+import LogoIcon from '../icons/LogoIcon';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -27,7 +28,8 @@ const useStyles = makeStyles((theme: Theme) =>
 		toolbar:
 			{
 				display: 'flex',
-				justifyContent: 'space-between'
+				justifyContent: 'space-between',
+				width: '100vw'
 			}
 	})
 );
@@ -54,9 +56,12 @@ export default function Haeder() {
 		<div className={classes.root}>
 			<AppBar position="fixed" style={{ backgroundColor: 'var(--primaryColor)' }}>
 				<Toolbar className={classes.toolbar}>
-					<Typography variant="h5" className={classes.title}>
-						React Badges
-					</Typography>
+					<div style={{ display: 'flex' }}>
+						<LogoIcon height={30} width={30} style={{ marginRight: 10 }} />
+						<Typography variant="h5" className={classes.title}>
+							React Badges
+						</Typography>
+					</div>
 					<div>
 						<IconButton
 							onClick={() => router.push('https://github.com/satishnaikawadi2011/react-badges')}
