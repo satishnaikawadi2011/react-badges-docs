@@ -36,7 +36,7 @@ export default function Haeder() {
 	const classes = useStyles();
 	return (
 		<div className={classes.root}>
-			<AppBar position="static" style={{ backgroundColor: 'var(--primaryColor)' }}>
+			<AppBar position="fixed" style={{ backgroundColor: 'var(--primaryColor)' }}>
 				<Toolbar className={classes.toolbar}>
 					<Typography variant="h5" className={classes.title}>
 						React Badges
