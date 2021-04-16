@@ -1,9 +1,10 @@
 import React from 'react';
 import Header from '../components/Header';
 import { Badge } from 'react-badges';
-import GithubIcon from '../icons/GithubIcon';
 import { Paper } from '@material-ui/core';
 import NotificationIcon from '../icons/NotificationIcon';
+import CodeSnippet from '../components/code-snippet/CodeSnippet';
+import { firstSnippet } from '../snippet-data/Snippets';
 
 export default function Home() {
 	return (
@@ -28,18 +29,19 @@ export default function Home() {
 				</p>
 				<Paper style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem' }}>
 					<Badge content={5} contentColor="#ffffff" style={{ marginRight: '20px' }}>
-						<NotificationIcon height={40} width={40} />
+						<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
 					</Badge>
 					<Badge content={5} bgColor="blue" style={{ marginRight: '20px' }}>
-						<NotificationIcon height={40} width={40} />
+						<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
 					</Badge>
 					<Badge content={5} bgColor="pink" style={{ marginRight: '20px' }}>
-						<NotificationIcon height={40} width={40} />
+						<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
 					</Badge>
 					<Badge content={5} bgColor="aqua" style={{ marginRight: '20px' }}>
-						<NotificationIcon height={40} width={40} />
+						<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
 					</Badge>
 				</Paper>
+				<CodeSnippet code={firstSnippet} language="tsx" fileName="App.tsx" />
 			</section>
 		</React.Fragment>
 	);
