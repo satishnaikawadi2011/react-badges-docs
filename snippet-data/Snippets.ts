@@ -1,5 +1,5 @@
 export const firstSnippet = `import React from 'react';
-import { Badge } from 'react-badges';
+import { Badge } from 'customizable-react-badges';
 
 const App = () => {
   return (			<React.Fragment>
@@ -20,7 +20,7 @@ const App = () => {
 };`;
 
 export const secondSnippet = `import React from 'react';
-import { Badge } from 'react-badges';
+import { Badge } from 'customizable-react-badges';
 
 const App = () => {
 	return (
@@ -45,7 +45,7 @@ export default App;
 `;
 
 export const thirdSnippet = `import React from 'react';
-import { Badge } from 'react-badges';
+import { Badge } from 'customizable-react-badges';
 
 const App = () => {
 	return (
@@ -64,7 +64,7 @@ export default App;
 `;
 
 export const fourthSnippet = `import React from 'react';
-import { Badge } from 'react-badges';
+import { Badge } from 'customizable-react-badges';
 
 const App = () => {
 	return (
@@ -89,7 +89,7 @@ export default App;
 `;
 
 export const fifthSnippet = `import React from 'react';
-import { Badge } from 'react-badges';
+import { Badge } from 'customizable-react-badges';
 
 const App = () => {
 	return (

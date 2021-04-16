@@ -2,7 +2,7 @@ import React from 'react';
 import NotificationIcon from '../../icons/NotificationIcon';
 import { thirdSnippet } from '../../snippet-data/Snippets';
 import CodeSnippet from '../code-snippet/CodeSnippet';
-import { Badge } from 'react-badges';
+import { Badge } from 'customizable-react-badges';
 
 const HideZeroSection = () => {
 	return (

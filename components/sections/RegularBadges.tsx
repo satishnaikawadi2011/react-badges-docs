@@ -1,7 +1,7 @@
 import React from 'react';
 import { fifthSnippet } from '../../snippet-data/Snippets';
 import CodeSnippet from '../code-snippet/CodeSnippet';
-import { Badge } from 'react-badges';
+import { Badge } from 'customizable-react-badges';
 
 const RegularBadges = () => {
 	return (

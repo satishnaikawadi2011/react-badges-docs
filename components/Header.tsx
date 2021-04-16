@@ -70,7 +70,11 @@ export default function Haeder() {
 						>
 							<GithubIcon fill="#ffffff" height={30} width={30} />
 						</IconButton>
-						<IconButton edge="end" className={classes.menuButton}>
+						<IconButton
+							edge="end"
+							className={classes.menuButton}
+							onClick={() => router.push('https://www.npmjs.com/package/customizable-react-badges')}
+						>
 							<NpmIcon fill="#ffffff" height={40} width={40} />
 						</IconButton>
 						<IconButton edge="end" className={classes.menuButton}>

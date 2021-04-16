@@ -687,6 +687,11 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.7.tgz#2a5fb75e1015e84dd15692f71e89a1450290950b"
   integrity sha512-KxnUB0ZMlnUWCsx2Z8MUsr6qV6ja1w9ArPErJaJaF8a5SOWoHLIszeCTKGRGRgtLgYrs1E8CHkNSP1VZTTPc9g==
 
+customizable-react-badges@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/customizable-react-badges/-/customizable-react-badges-1.0.0.tgz#1b8cbd2872711d5e5d0b90b6f4e9bf31f15059af"
+  integrity sha512-PcRCUWdkJH9fScHJwrhW1W1Ox5nqYfhYqmQTnouqWTEKGFLSXnqLz40qGdrlQf6pAg2JLnsf+5PaCPWpMQ3NDg==
+
 data-uri-to-buffer@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-3.0.1.tgz#594b8973938c5bc2c33046535785341abc4f3636"
