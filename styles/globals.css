@@ -60,7 +60,7 @@ button {
 
 body {
 	font-family: 'Cantarell', sans-serif;
-	background: var(--bgColor);
+	background-color: var(--bgColor);
 	color: var(--primaryText);
 	line-height: 1.5;
 	font-size: 1rem;

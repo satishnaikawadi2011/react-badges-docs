@@ -1,7 +1,7 @@
+import Head from 'next/Head';
 import React from 'react';
 import Header from '../components/Header';
 import { Badge } from 'react-badges';
-import { Paper } from '@material-ui/core';
 import NotificationIcon from '../icons/NotificationIcon';
 import CodeSnippet from '../components/code-snippet/CodeSnippet';
 import { firstSnippet, secondSnippet, thirdSnippet, fourthSnippet, fifthSnippet } from '../snippet-data/Snippets';
@@ -9,6 +9,9 @@ import { firstSnippet, secondSnippet, thirdSnippet, fourthSnippet, fifthSnippet 
 export default function Home() {
 	return (
 		<React.Fragment>
+			<Head>
+				<title>React Badges</title>
+			</Head>
 			<Header />
 			<h1 style={{ textAlign: 'center' }}>React Badges</h1>
 			<section>
@@ -27,7 +30,16 @@ export default function Home() {
 					Demo examples of badges containing text or number, using any background colors. The badge is applied
 					to its children.
 				</p>
-				<Paper style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem' }}>
+				<div
+					style={{
+						backgroundColor: 'var(--bgCard)',
+						display: 'flex',
+						justifyContent: 'center',
+						alignItems: 'center',
+						padding: '2rem',
+						margin: '1rem 3rem'
+					}}
+				>
 					<Badge content={5} contentColor="#ffffff">
 						<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
 					</Badge>
@@ -40,7 +52,7 @@ export default function Home() {
 					<Badge content={5} bgColor="aqua">
 						<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
 					</Badge>
-				</Paper>
+				</div>
 				<CodeSnippet code={firstSnippet} language="tsx" fileName="App.tsx" />
 			</section>
 			<section>
@@ -48,7 +60,16 @@ export default function Home() {
 				<p>
 					You can use the <code>max</code> property on Badge Component to cap the value of the badge content.
 				</p>
-				<Paper style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem' }}>
+				<div
+					style={{
+						backgroundColor: 'var(--bgCard)',
+						display: 'flex',
+						justifyContent: 'center',
+						alignItems: 'center',
+						padding: '2rem',
+						margin: '1rem 3rem'
+					}}
+				>
 					<Badge content={99} contentColor="#ffffff">
 						<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
 					</Badge>
@@ -61,7 +82,7 @@ export default function Home() {
 					<Badge content={10000} max={999} bgColor="aqua">
 						<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
 					</Badge>
-				</Paper>
+				</div>
 				<CodeSnippet code={secondSnippet} language="tsx" fileName="App.tsx" />
 			</section>
 			<section>
@@ -71,14 +92,23 @@ export default function Home() {
 					<code>hideZero</code> property. By default hideZero is false , so that when the value of content is
 					zero it will show the badge.
 				</p>
-				<Paper style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem' }}>
+				<div
+					style={{
+						backgroundColor: 'var(--bgCard)',
+						display: 'flex',
+						justifyContent: 'center',
+						alignItems: 'center',
+						padding: '2rem',
+						margin: '1rem 3rem'
+					}}
+				>
 					<Badge content={0} bgColor="pink">
 						<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
 					</Badge>
 					<Badge content={0} hideZero bgColor="aqua">
 						<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
 					</Badge>
-				</Paper>
+				</div>
 				<CodeSnippet code={thirdSnippet} language="tsx" fileName="App.tsx" />
 			</section>
 			<section>
@@ -87,7 +117,16 @@ export default function Home() {
 					You can use the <code>verticalAlignment</code> property to control vertical alignment of the badge
 					and <code>horizontalAlignment</code> property to control horizontal alignment of the badge.
 				</p>
-				<Paper style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem' }}>
+				<div
+					style={{
+						backgroundColor: 'var(--bgCard)',
+						display: 'flex',
+						justifyContent: 'center',
+						alignItems: 'center',
+						padding: '2rem',
+						margin: '1rem 3rem'
+					}}
+				>
 					<div style={{ marginRight: '50px' }}>
 						<Badge content={5} verticalAlignment="top" horizontalAlignment="right" bgColor="pink">
 							<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
@@ -108,7 +147,7 @@ export default function Home() {
 							<NotificationIcon fill="var(--primaryText)" height={40} width={40} />
 						</Badge>
 					</div>
-				</Paper>
+				</div>
 				<CodeSnippet code={fourthSnippet} language="tsx" fileName="App.tsx" />
 			</section>
 			<section>
@@ -117,13 +156,14 @@ export default function Home() {
 					To use Badge Component for use other than Notifications you can pass any string to{' '}
 					<code>content</code> property of the Badge and don't pass any children to the Badge Component.
 				</p>
-				<Paper
+				<div
 					style={{
-						height: 100,
+						backgroundColor: 'var(--bgCard)',
 						display: 'flex',
 						justifyContent: 'space-around',
 						alignItems: 'center',
-						padding: '2rem'
+						padding: '2rem',
+						margin: '1rem 3rem'
 					}}
 				>
 					<Badge content="Danger" contentColor="#ffffff" />
@@ -132,7 +172,7 @@ export default function Home() {
 					<Badge content="Info" bgColor="skyblue" />
 					<Badge content="Blue" bgColor="blue" />
 					<Badge content="Pink" bgColor="pink" />
-				</Paper>
+				</div>
 				<CodeSnippet code={fifthSnippet} language="tsx" fileName="App.tsx" />
 			</section>
 		</React.Fragment>

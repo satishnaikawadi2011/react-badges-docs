@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -8,6 +8,7 @@ import GithubIcon from '../icons/GithubIcon';
 import IconButton from '@material-ui/core/IconButton';
 import NpmIcon from '../icons/NpmIcon';
 import DarkModeIcon from '../icons/DarkModeIcon';
+import LightModeIcon from '../icons/LightModeIcon';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -34,6 +35,21 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function Haeder() {
 	const router = useRouter();
 	const classes = useStyles();
+	const [
+		darkMode,
+		setDarkMode
+	] = useState<boolean>(true);
+
+	const handleChangeTheme = (e: any) => {
+		if (!darkMode) {
+			document.documentElement.setAttribute('data-theme', 'dark');
+			setDarkMode(true);
+		}
+		else {
+			document.documentElement.setAttribute('data-theme', 'light');
+			setDarkMode(false);
+		}
+	};
 	return (
 		<div className={classes.root}>
 			<AppBar position="fixed" style={{ backgroundColor: 'var(--primaryColor)' }}>
@@ -53,7 +69,14 @@ export default function Haeder() {
 							<NpmIcon fill="#ffffff" height={40} width={40} />
 						</IconButton>
 						<IconButton edge="end" className={classes.menuButton}>
-							<DarkModeIcon fill="#ffffff" height={30} width={30} />
+							{
+								!darkMode ? <DarkModeIcon
+									fill="#ffffff"
+									height={30}
+									width={30}
+									onClick={handleChangeTheme}
+								/> :
+								<LightModeIcon fill="#ffffff" height={30} width={30} onClick={handleChangeTheme} />}
 						</IconButton>
 					</div>
 				</Toolbar>

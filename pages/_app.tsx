@@ -8,7 +8,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<React.Fragment>
-			<CssBaseline />
 			<Component {...pageProps} />
 		</React.Fragment>
 	);
