@@ -115,3 +115,128 @@ p {
 a {
 	text-decoration: none;
 }
+
+p {
+	font-size: 1.1rem;
+	margin-bottom: 3rem;
+	color: var(--primaryText);
+}
+
+p:first-child {
+	margin-top: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Londrina Solid', cursive;
+}
+
+img {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2.2rem;
+}
+
+h3 {
+	font-size: 1.9rem;
+}
+
+h4 {
+	font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+		letter-spacing: 0.5rem;
+		font-size: 4.5rem;
+	}
+
+	h4 {
+		font-size: 3.3rem;
+	}
+
+	h2 {
+		font-size: 3.9rem;
+	}
+
+	h3 {
+		font-size: 3.6rem;
+	}
+
+	p {
+		font-size: 1.3rem;
+	}
+}
+
+a {
+	position: relative;
+	display: inline-block;
+	color: var(--primaryColor);
+	font-weight: bold;
+	cursor: pointer;
+	text-transform: capitalize;
+	transition: all 0.3s linear;
+}
+
+a:hover {
+	border-bottom: 2px solid var(--primaryColor);
+}
+
+code:not([class]) {
+	text-align: baseline;
+	background-color: #243447;
+	padding: 0.1rem 0.25rem;
+	color: white;
+}
+
+blockquote {
+	border-color: var(--primaryColor);
+	border-left: 20px;
+	background-color: var(--bgCard);
+}
+
+blockquote p {
+	padding: 1rem;
+}
+
+strong {
+	font-weight: bold;
+}
+
+ul {
+	list-style-position: inside;
+	list-style: none;
+	margin-bottom: 4rem;
+}
+
+ul li {
+	margin-left: 1.5rem;
+	margin-bottom: 0.8rem;
+}
+
+ul li p {
+	display: inline;
+}
+
+ul li:before {
+	content: "⦿";
+	font-size: 50%; /* or whatever */
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+section {
+	margin: 0 auto;
+	max-width: 1140px;
+}

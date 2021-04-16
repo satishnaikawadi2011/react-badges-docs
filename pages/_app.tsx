@@ -1,10 +1,17 @@
 import '../styles/normalize.css';
 import '../styles/globals.css';
-import App from 'next/app';
+import React from 'react';
 import { AppProps /*, AppContext */ } from 'next/app';
+// import { ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 function MyApp({ Component, pageProps }: AppProps) {
-	return <Component {...pageProps} />;
+	return (
+		<React.Fragment>
+			<CssBaseline />
+			<Component {...pageProps} />
+		</React.Fragment>
+	);
 }
 
 export default MyApp;
