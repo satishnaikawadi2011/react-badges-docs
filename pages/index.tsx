@@ -6,18 +6,18 @@ import MaxValueSection from '../components/sections/MaxValueSection';
 import HideZeroSection from '../components/sections/HideZeroSection';
 import BadgeAlignmentSection from '../components/sections/BadgeAlignmentSection';
 import RegularBadges from '../components/sections/RegularBadges';
-import Head from 'next/Head';
+// import Head from 'next/Head';
 
 export default function Home() {
-	const url = '';
-	const description =
-		'This is a React Component Library. With help of this you can create Customizable and Reusable React Badge component for your all kinds of Projects and WebSites.';
-	const image =
-		'https://res.cloudinary.com/dg2zkumuc/image/upload/v1618564550/React%20Badges/react-badges_oarucd.gif';
-	const title = 'React Badges';
+	// const url = '';
+	// const description =
+	// 	'This is a React Component Library. With help of this you can create Customizable and Reusable React Badge component for your all kinds of Projects and WebSites.';
+	// const image =
+	// 	'https://res.cloudinary.com/dg2zkumuc/image/upload/v1618564550/React%20Badges/react-badges_oarucd.gif';
+	// const title = 'React Badges';
 	return (
 		<React.Fragment>
-			<Head>
+			{/* <Head>
 				<title>{title}</title>
 				<meta name="og:title" content={title} />
 				<meta name="og:type" content="article" />
@@ -34,7 +34,7 @@ export default function Home() {
 					<meta name="og:url" content={url} />
 				</React.Fragment>
 			</Head>
-			<Header />
+			<Header /> */}
 			<IntroSection />
 			<BasicNotificationBadgeSection />
 			<MaxValueSection />
