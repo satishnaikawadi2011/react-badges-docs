@@ -1,23 +1,24 @@
 {
-  "name": "react-badges-docs",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@material-ui/core": "^4.11.3",
-    "customizable-react-badges": "^1.0.0",
-    "next": "10.1.3",
-    "react": "17.0.2",
-    "react-copy-to-clipboard": "^5.0.3",
-    "react-dom": "17.0.2",
-    "react-syntax-highlighter": "^15.4.3"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.3",
-    "typescript": "^4.2.4"
-  }
+	"name": "react-badges-docs",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@material-ui/core": "^4.11.3",
+		"customizable-react-badges": "^1.0.0",
+		"next": "9.3.4",
+		"react": "17.0.2",
+		"react-copy-to-clipboard": "^5.0.3",
+		"react-dom": "17.0.2",
+		"react-syntax-highlighter": "^15.4.3"
+	},
+	"devDependencies": {
+		"@types/node": "^14.14.41",
+		"@types/react": "^17.0.3",
+		"typescript": "^4.2.4"
+	}
 }

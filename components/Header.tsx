@@ -64,18 +64,22 @@ export default function Haeder() {
 					</div>
 					<div>
 						<IconButton
-							onClick={() => router.push('https://github.com/satishnaikawadi2011/react-badges')}
+							// onClick={() => router.push('https://github.com/satishnaikawadi2011/react-badges')}
 							edge="end"
 							className={classes.menuButton}
 						>
-							<GithubIcon fill="#ffffff" height={30} width={30} />
+							<a href="https://github.com/satishnaikawadi2011/react-badges">
+								<GithubIcon fill="#ffffff" height={30} width={30} />
+							</a>
 						</IconButton>
 						<IconButton
 							edge="end"
 							className={classes.menuButton}
-							onClick={() => router.push('https://www.npmjs.com/package/customizable-react-badges')}
+							// onClick={() => router.push('https://www.npmjs.com/package/customizable-react-badges')}
 						>
-							<NpmIcon fill="#ffffff" height={40} width={40} />
+							<a href="https://www.npmjs.com/package/customizable-react-badges">
+								<NpmIcon fill="#ffffff" height={40} width={40} />
+							</a>
 						</IconButton>
 						<IconButton onClick={handleChangeTheme} edge="end" className={classes.menuButton}>
 							{
