@@ -77,15 +77,10 @@ export default function Haeder() {
 						>
 							<NpmIcon fill="#ffffff" height={40} width={40} />
 						</IconButton>
-						<IconButton edge="end" className={classes.menuButton}>
+						<IconButton onClick={handleChangeTheme} edge="end" className={classes.menuButton}>
 							{
-								!darkMode ? <DarkModeIcon
-									fill="#ffffff"
-									height={30}
-									width={30}
-									onClick={handleChangeTheme}
-								/> :
-								<LightModeIcon fill="#ffffff" height={30} width={30} onClick={handleChangeTheme} />}
+								!darkMode ? <DarkModeIcon fill="#ffffff" height={30} width={30} /> :
+								<LightModeIcon fill="#ffffff" height={30} width={30} />}
 						</IconButton>
 					</div>
 				</Toolbar>

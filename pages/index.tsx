@@ -1,4 +1,3 @@
-import Head from 'next/Head';
 import React from 'react';
 import Header from '../components/Header';
 import IntroSection from '../components/sections/IntroSection';
@@ -7,6 +6,7 @@ import MaxValueSection from '../components/sections/MaxValueSection';
 import HideZeroSection from '../components/sections/HideZeroSection';
 import BadgeAlignmentSection from '../components/sections/BadgeAlignmentSection';
 import RegularBadges from '../components/sections/RegularBadges';
+import Head from 'next/Head';
 
 export default function Home() {
 	const url = '';
